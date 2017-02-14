@@ -7,7 +7,7 @@ end
 
 post '/coins' do
 	coins = params[:change]
-	results = coin_changer(coins)
+	results = coins_to_string(coins)
 	erb :change_input, :locals => {results: results, coins: coins}
 
 end
