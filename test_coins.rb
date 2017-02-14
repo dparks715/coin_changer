@@ -49,3 +49,12 @@ class TestCoinChanger < Minitest::Test
 	end
 
 end
+
+class TestStringConversion < Minitest::Test
+
+	def test_fifty_cents_returns_string
+		results = coins_to_string(50)
+		assert_equal('quarters: 2, dimes: 0, nickels: 0, pennies: 0', results)	
+	end
+
+end

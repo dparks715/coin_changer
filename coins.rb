@@ -19,3 +19,14 @@ end
 
 
 # Need function to convert hash to strings for sinatra to display I think.
+
+def coins_to_string(change)
+	coins = coin_changer(change)
+	numbers = ''
+	coins.each do |key, value|       
+	     numbers << key.to_s + value.to_s
+
+	 
+	end
+	numbers
+end
