@@ -10,7 +10,7 @@ class TestCoinChanger < Minitest::Test
 
 	def test_for_empty_hash
 		results = coin_changer()
-		assert_equal(1, results.length)	
+		assert_equal(4, results.length)	
 	end
 
 end
