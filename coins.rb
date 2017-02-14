@@ -5,9 +5,10 @@ def coin_changer(change)
 	coin_value = {quarters: 25, dimes: 10, nickels: 5, pennies: 1}
 	
 
-	# First thought is to iterate through coin_value
-	# Somehow check how many of each item will fit in my param (change)
-	# Then take how many and alter the value of your_change.
+	#Iterates through each item in the hash with access to the key and value.
+	#While loop as long as the value is less or equal to change input.
+	#Add 1 to your_change current key for each while loop.
+	#Subtract value from change every while loop.
 	coin_value.each { |key, value| while value <= change
 										your_change[key] += 1
 										change = change - value
