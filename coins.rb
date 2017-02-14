@@ -16,3 +16,6 @@ def coin_changer(change)
 
 	your_change # Hash to be returned with values altered to represent number of each coin.
 end
+
+
+# Need function to convert hash to strings for sinatra to display I think.
