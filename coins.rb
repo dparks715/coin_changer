@@ -8,9 +8,10 @@ def coin_changer(change)
 	# First thought is to iterate through coin_value
 	# Somehow check how many of each item will fit in my param (change)
 	# Then take how many and alter the value of your_change.
-	coin_value.each { |key, value| while sum <= change
-										sum = value + value
+	coin_value.each { |key, value| while sum < change
 										your_change[key] += 1
+										sum += value
+										
 									end}
 
 	your_change # Hash to be returned with values altered to represent number of each coin.
