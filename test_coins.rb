@@ -54,7 +54,12 @@ class TestStringConversion < Minitest::Test
 
 	def test_fifty_cents_returns_string
 		results = coins_to_string(50)
-		assert_equal('quarters->2 dimes->0 nickels->0 pennies->0 ', results)	
+		assert_equal('2 quarters 0 dimes 0 nickels 0 pennies ', results)	
+	end
+
+	def test_six_two_cents_returns_string
+		results = coins_to_string(62)
+		assert_equal('2 quarters 1 dimes 0 nickels 2 pennies ', results)	
 	end
 
 end

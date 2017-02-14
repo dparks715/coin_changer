@@ -24,7 +24,7 @@ def coins_to_string(change)
 	coins = coin_changer(change)
 	numbers = ''
 	coins.each do |key, value|       
-	     numbers << key.to_s + '->' + value.to_s + ' '
+	     numbers << value.to_s + ' ' + key.to_s + ' '
 
 	 
 	end
