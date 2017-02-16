@@ -1,21 +1,22 @@
 <!DOCTYPE HTML>
 <head>
 
-	<link rel='stylesheet' type='text/css' href='styling.css'>
+	<link rel='stylesheet' type='text/css' href='styles/styling.css'>
 	<title>Coin Changer</title>
 
 </head>
 
 <center>
 
-<h1 style='color:blue;'>Enter an amount of change to convert to coins.</h1>
+<h1>Enter an amount of change to convert to coins.</h1>
 
 	<body>
-			<%=message1%><%=results%>
+			<div class='result'><%=message1%><%=results%></div><br>
 			<form action='coins' method='POST'>
 				<input type='text' name='change' required><br><br>
 				<input type='submit' value='Submit'>
 			</form>
+			<img src='images/change.jpg'>
 
 	</body>
 
